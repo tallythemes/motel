@@ -3,7 +3,7 @@ define('STEED_THEME_ID', 'steed-hotel');
 
 add_action( 'after_setup_theme', 'motel_setup');
 function motel_setup(){
-	
+
 	add_action( 'widgets_init', 'motel_widgets_init' );
 	
 }
@@ -141,3 +141,5 @@ function motel_widgets_init() {
 		));
 	}
 }
+
+add_filter('steedpro_enable_section_editor', '__return_true');
